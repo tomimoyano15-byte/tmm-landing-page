@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TMM Painting & Decorating — Gold Coast's Trusted Painters</title>
+<meta name="description" content="Dulux Accredited painters on the Gold Coast. 4.9-star rating. Free quote in 24 hours. We treat your home like it's ours.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- HubSpot Tracking Code — auto-captures form submissions as contacts -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/441704354.js"></script>
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '927455176735812');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=927455176735812&ev=PageView&noscript=1"/></noscript>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --blue: #459ee3;
+  --blue-light: #e8f2fc;
+  --blue-dark: #2d7bc7;
+  --yellow: #f2b134;
+  --red: #ed1c25;
+  --text: #333;
+  --text-light: #666;
+  --white: #ffffff;
+  --bg: #fafbfd;
+}
+
+body {
+  font-family: 'Poppins', -apple-system, sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+/* === HERO === */
+.hero {
+  background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%);
+  color: white;
+  padding: 80px 0 60px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: var(--white);
+  clip-path: ellipse(55% 100% at 50% 100%);
+}
+.hero-content { position: relative; z-index: 1; }
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 100px;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.hero-badge .stars { color: var(--yellow); }
+.hero h1 {
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  max-width: 600px;
+}
+.hero p {
+  font-size: 17px;
+  opacity: 0.9;
+  max-width: 500px;
+  margin-bottom: 32px;
+  font-weight: 300;
+}
+.hero-cta {
+  display: inline-block;
+  background: var(--yellow);
+  color: #1a1a1a;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.hero-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+
+/* === TRUST BAR === */
+.trust-bar {
+  padding: 32px 0;
+  background: var(--white);
+  border-bottom: 1px solid #eee;
+}
+.trust-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-light);
+}
+.trust-item .icon { font-size: 20px; }
+
+/* === GUIDE SECTION === */
+.guide {
+  padding: 80px 0;
+  background: var(--bg);
+}
+.section-label {
+  display: inline-block;
+  background: var(--blue-light);
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 6px 14px;
+  border-radius: 100px;
+  margin-bottom: 16px;
+}
+.section-title {
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+.section-sub {
+  font-size: 16px;
+  color: var(--text-light);
+  max-width: 560px;
+  margin-bottom: 48px;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.guide-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 28px;
+  border: 1px solid #e8edf2;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.guide-card:hover {
+  border-color: var(--blue);
+  box-shadow: 0 4px 16px rgba(69,158,227,0.1);
+}
+.guide-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--blue);
+  color: white;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.guide-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.guide-card p {
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+/* === DIFFERENCE === */
+.difference {
+  padding: 80px 0;
+  background: var(--white);
+}
+.diff-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.diff-img {
+  border-radius: 16px;
+  overflow: hidden;
+}
+.diff-img img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+.diff-points { list-style: none; }
+.diff-points li {
+  display: flex;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.diff-points li:last-child { border-bottom: none; }
+.diff-check {
+  width: 24px;
+  height: 24px;
+  background: var(--blue-light);
+  color: var(--blue);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.diff-text h4 { font-size: 15px; font-weight: 600; margin-bottom: 2px; }
+.diff-text p { font-size: 13px; color: var(--text-light); }
+
+/* === TESTIMONIALS === */
+.testimonials {
+  padding: 80px 0;
+  background: var(--bg);
+}
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+.testimonial-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 28px;
+  border: 1px solid #e8edf2;
+}
+.testimonial-stars { color: var(--yellow); font-size: 16px; margin-bottom: 12px; }
+.testimonial-card blockquote {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text);
+  margin-bottom: 16px;
+  font-style: italic;
+}
+.testimonial-author {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+/* === CTA / FORM === */
+.cta-section {
+  padding: 80px 0;
+  background: var(--white);
+}
+.cta-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.cta-left h2 {
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.cta-left p {
+  font-size: 15px;
+  color: var(--text-light);
+  margin-bottom: 24px;
+}
+.cta-guarantee {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: var(--blue-light);
+  border-radius: 10px;
+  font-size: 14px;
+  color: var(--blue-dark);
+  font-weight: 500;
+}
+.cta-guarantee .icon { font-size: 24px; }
+
+.form-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 32px;
+  border: 2px solid var(--blue);
+  box-shadow: 0 8px 32px rgba(69,158,227,0.12);
+}
+.form-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.form-card .form-sub {
+  font-size: 13px;
+  color: var(--text-light);
+  margin-bottom: 24px;
+}
+
+.form-group { margin-bottom: 16px; }
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  transition: border-color 0.2s;
+  background: var(--bg);
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(69,158,227,0.1);
+}
+.form-group textarea { resize: vertical; min-height: 80px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.submit-btn:hover { background: var(--blue-dark); transform: translateY(-1px); }
+.submit-btn:disabled { background: #ccc; cursor: not-allowed; transform: none; }
+.form-note {
+  text-align: center;
+  font-size: 11px;
+  color: #999;
+  margin-top: 12px;
+}
+
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 32px;
+}
+.form-success .icon { font-size: 48px; margin-bottom: 16px; }
+.form-success h3 { font-size: 20px; margin-bottom: 8px; color: var(--blue); }
+.form-success p { font-size: 14px; color: var(--text-light); }
+
+/* === FOOTER === */
+footer {
+  padding: 40px 0;
+  background: #1a1a1a;
+  color: #aaa;
+  font-size: 13px;
+  text-align: center;
+}
+footer a { color: var(--blue); text-decoration: none; }
+footer .footer-links { margin-top: 8px; }
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .hero { padding: 60px 0 48px; }
+  .diff-grid, .cta-wrapper { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .trust-items { gap: 16px; }
+  .guide-grid { grid-template-columns: 1fr; }
+  .diff-img { order: -1; }
+  .diff-img img { height: 250px; }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-badge">
+      <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span>4.9 stars on Google &middot; 200+ homes painted</span>
+    </div>
+    <h1>Gold Coast Painters Who Actually Prep Before They Paint</h1>
+    <p>We spend 60% of every job on preparation. That's why our work lasts years, not months. Dulux Accredited. QBCC Licensed.</p>
+    <a href="#quote" class="hero-cta">Get Your Free Quote</a>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="trust-bar">
+  <div class="container">
+    <div class="trust-items">
+      <div class="trust-item"><span class="icon">&#10003;</span> Dulux Accredited</div>
+      <div class="trust-item"><span class="icon">&#10003;</span> QBCC Licensed</div>
+      <div class="trust-item"><span class="icon">&#10003;</span> Fully Insured</div>
+      <div class="trust-item"><span class="icon">&#10003;</span> Same-Day Callback</div>
+      <div class="trust-item"><span class="icon">&#10003;</span> Free Written Quotes</div>
+    </div>
+  </div>
+</section>
+
+<!-- 10-POINT GUIDE -->
+<section class="guide">
+  <div class="container">
+    <span class="section-label">Homeowner's Guide</span>
+    <h2 class="section-title">10 Things to Check Before Hiring a Painter</h2>
+    <p class="section-sub">Most homeowners don't know what to look for. Use this checklist to avoid the painters who cut corners.</p>
+
+    <div class="guide-grid">
+      <div class="guide-card">
+        <div class="guide-number">1</div>
+        <h3>Are they QBCC Licensed?</h3>
+        <p>In Queensland, any painting job over $3,300 requires a QBCC licence. No licence = no legal protection if something goes wrong.</p>
+      </div>
+      <div class="guide-card">
+        <div class="guide-number">2</div>
+        <h3>Do they prep properly?</h3>
+        <p>The biggest difference between a job that lasts and one that peels. Ask what percentage of the job is prep work. Below 40% is a red flag.</p>
+      </div>
+      <div class="guide-card">
+        <div class="guide-number">3</div>
+        <h3>What paint brands do they use?</h3>
+        <p>Dulux and Taubmans are industry standard in Australia. Ask for the exact product and finish. "Premium paint" means nothing without a brand name.</p>
+      </div>
+      <div class="guide-card">
+        <div class="guide-number">4</div>
+        <h3>Can they show recent work?</h3>
+        <p>Photos of completed projects, ideally on the Gold Coast. Bonus if they can connect you with a past client for a reference.</p>
+      </div>
+      <div class="guide-card">
+        <div class="guide-number">5</div>
+        <h3>Do they carry proper insurance?</h3>
+        <p>Public liability and workers compensation. Ask for certificates. If they can't provide them, walk away.</p>
+      </div>
+      <div class="guide-card">
+        <div class="guide-number">6</div>
+        <h3>Will they give a written quote?</h3>
+        <p>Verbal quotes are worthless. A professional painter will inspect your property, measure, and provide a detailed written quote — free of charge.</p>
+      </div>
+      <div class="guide-card">
+        <div class="guide-number">7</div>
+        <h3>How do they handle furniture and floors?</h3>
+        <p>Professional painters drop-sheet everything, mask edges properly, and leave your home cleaner than they found it. Ask about their process.</p>
+      </div>
+      <div class="guide-card">
+        <div class="guide-number">8</div>
+        <h3>What's the warranty?</h3>
+        <p>Quality painters offer a workmanship warranty. Check if the paint manufacturer warranty applies — it only does if an accredited painter applies it.</p>
+      </div>
+      <div class="guide-card">
+        <div class="guide-number">9</div>
+        <h3>How quickly do they respond?</h3>
+        <p>If a painter takes days to return your call, imagine how they'll handle issues during the job. Response time reveals reliability.</p>
+      </div>
+      <div class="guide-card">
+        <div class="guide-number">10</div>
+        <h3>Are they Dulux Accredited?</h3>
+        <p>Only painters who meet Dulux's quality standards earn accreditation. It means trained, tested, and held to a higher standard than most.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TMM DIFFERENCE -->
+<section class="difference">
+  <div class="container">
+    <span class="section-label">Why TMM</span>
+    <h2 class="section-title">We tick every box above. Here's how.</h2>
+
+    <div class="diff-grid">
+      <div class="diff-img">
+        <img src="https://tmmpainting.com.au/wp-content/uploads/2024/09/image-7.webp" alt="TMM Painting finished project" loading="lazy">
+      </div>
+      <div>
+        <ul class="diff-points">
+          <li>
+            <div class="diff-check">&#10003;</div>
+            <div class="diff-text">
+              <h4>60% of every job is preparation</h4>
+              <p>We sand, fill, prime, and mask before a single coat goes on. Most painters spend less than 20% on prep.</p>
+            </div>
+          </li>
+          <li>
+            <div class="diff-check">&#10003;</div>
+            <div class="diff-text">
+              <h4>Dulux Accredited Painters</h4>
+              <p>Trained and tested by Dulux. Your manufacturer warranty is valid because we apply it to specification.</p>
+            </div>
+          </li>
+          <li>
+            <div class="diff-check">&#10003;</div>
+            <div class="diff-text">
+              <h4>Same-day callback guarantee</h4>
+              <p>You won't wait 3 days for a return call. We respond the same day — because if we can't return a call, why trust us with your home?</p>
+            </div>
+          </li>
+          <li>
+            <div class="diff-check">&#10003;</div>
+            <div class="diff-text">
+              <h4>200+ Gold Coast homes</h4>
+              <p>From Coolangatta to Coomera. We know the coastal conditions that destroy bad paint jobs.</p>
+            </div>
+          </li>
+          <li>
+            <div class="diff-check">&#10003;</div>
+            <div class="diff-text">
+              <h4>QBCC Licensed & Fully Insured</h4>
+              <p>Public liability, workers comp, and a QBCC licence. Everything you need for peace of mind.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="container">
+    <span class="section-label">What Clients Say</span>
+    <h2 class="section-title">Real reviews from Gold Coast homeowners</h2>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>"A rare quality these days. The attention to detail was excellent and the communication throughout was outstanding."</blockquote>
+        <div class="testimonial-author">Michelle E. &middot; Gold Coast</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>"Tomas and his team went above and beyond. They prepped everything properly and the finish is flawless. Highly recommend."</blockquote>
+        <div class="testimonial-author">Greg S. &middot; Burleigh Heads</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>"Same-day response, showed up on time, and left our house spotless. The best painting experience we've had."</blockquote>
+        <div class="testimonial-author">Kirsty E. &middot; Currumbin Waters</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA / FORM -->
+<section class="cta-section" id="quote">
+  <div class="container">
+    <div class="cta-wrapper">
+      <div class="cta-left">
+        <h2>Get Your Free Quote in 24 Hours</h2>
+        <p>Tell us about your project and we'll get back to you with a detailed, no-obligation quote. No chasing required — we call you.</p>
+
+        <div class="cta-guarantee">
+          <span class="icon">&#128274;</span>
+          <span>Your details are safe. We never share your information and we'll never spam you.</span>
+        </div>
+      </div>
+
+      <div class="form-card" id="formCard">
+        <h3>Request a Free Quote</h3>
+        <p class="form-sub">Takes 30 seconds. We'll call you back today.</p>
+
+        <form id="quoteForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstname">First Name *</label>
+              <input type="text" id="firstname" name="firstname" required placeholder="Your first name">
+            </div>
+            <div class="form-group">
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastname" name="lastname" placeholder="Your last name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="04XX XXX XXX">
+          </div>
+          <div class="form-group">
+            <label for="message">Tell us about your project</label>
+            <textarea id="message" name="message" placeholder="Interior or exterior? How many rooms? Any specific concerns?"></textarea>
+          </div>
+          <button type="submit" class="submit-btn" id="submitBtn">Get My Free Quote</button>
+          <p class="form-note">Free quote &middot; No obligation &middot; Same-day callback</p>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <div class="icon">&#10003;</div>
+          <h3>Quote Request Received</h3>
+          <p>We'll call you back today to discuss your project. If it's after hours, expect a call first thing tomorrow.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>&copy; 2026 TMM Painting & Decorating &middot; Gold Coast, QLD &middot; QBCC Licensed &middot; <a href="tel:0432600898">0432 600 898</a></p>
+    <div class="footer-links">
+      <a href="https://tmmpainting.com.au">tmmpainting.com.au</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Capture UTM parameters
+const params = new URLSearchParams(window.location.search);
+const utmData = {
+  utm_source: params.get('utm_source') || 'meta',
+  utm_medium: params.get('utm_medium') || 'paid',
+  utm_campaign: params.get('utm_campaign') || '',
+  utm_content: params.get('utm_content') || '',
+};
+
+// Form submission
+document.getElementById('quoteForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  const btn = document.getElementById('submitBtn');
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+
+  const formData = {
+    firstname: document.getElementById('firstname').value,
+    lastname: document.getElementById('lastname').value,
+    email: document.getElementById('email').value,
+    phone: document.getElementById('phone').value,
+    message: document.getElementById('message').value,
+    ...utmData,
+  };
+
+  // HubSpot tracking code auto-captures form submissions (Collected Forms)
+  // Push form data to HubSpot's tracking queue
+  var _hsq = window._hsq = window._hsq || [];
+  _hsq.push(['identify', { email: formData.email, firstname: formData.firstname, lastname: formData.lastname, phone: formData.phone }]);
+  _hsq.push(['trackPageView']);
+
+  // Track Meta Pixel conversion
+  if (typeof fbq !== 'undefined') {
+    fbq('track', 'Lead', { content_name: 'Meta Landing Page Quote', value: 0, currency: 'AUD' });
+  }
+
+  // Show success message
+  document.getElementById('quoteForm').style.display = 'none';
+  document.getElementById('formSuccess').style.display = 'block';
+});
+</script>
+
+</body>
+</html>
