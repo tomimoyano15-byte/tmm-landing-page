@@ -1,0 +1,8 @@
+# Local runtime / preview artifacts
+.tunnel-url
+__pycache__/
+leads.json
+leads.log
+preview-desktop.png
+preview-mobile.png
+local-runtime/

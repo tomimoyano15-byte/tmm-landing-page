@@ -654,7 +654,6 @@ const utmData = {
   utm_content: params.get('utm_content') || '',
 };
 
-const ghApiBase = window.location.hostname.endsWith('github.io') ? 'https://some-computers-saying-cross.trycloudflare.com' : '';
 // Form submission
 document.getElementById('quoteForm').addEventListener('submit', async function(e) {
   e.preventDefault();
@@ -674,7 +673,7 @@ document.getElementById('quoteForm').addEventListener('submit', async function(e
   };
 
   try {
-    const res = await fetch(`${ghApiBase}/api/submit`, {
+    const res = await fetch('/api/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
@@ -694,7 +693,7 @@ document.getElementById('quoteForm').addEventListener('submit', async function(e
     document.getElementById('formSuccess').style.display = 'block';
     const thankYouParams = new URLSearchParams(utmData);
     thankYouParams.set('lead', '1');
-    setTimeout(() => { window.location.href = `thanks.html?${thankYouParams.toString()}`; }, 350);
+    setTimeout(() => { window.location.href = `/thanks.html?${thankYouParams.toString()}`; }, 350);
   } catch (err) {
     alert('There was a problem sending your request. Please call 0432 600 898 and we will help straight away.');
     btn.disabled = false;
