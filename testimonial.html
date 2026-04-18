@@ -746,7 +746,8 @@ function isQualified(d) {
   var inGC = GC_SUBURBS.some(function(s){ return sub.includes(s); });
   var goodTiming = ['asap','1-4_weeks'].includes(d.timing);
   var notApt = d.property_type !== 'apartment';
-  return inGC && goodTiming && notApt;
+  var notMaintenance = d.service_type !== 'maintenance';
+  return inGC && goodTiming && notApt && notMaintenance;
 }
 
 function handleSubmit() {
@@ -772,8 +773,14 @@ function handleSubmit() {
   _hsq.push(['trackPageView']);
 
   if (typeof fbq !== 'undefined') {
-    fbq('track', 'Lead', {content_name: 'Meta LP', value: 0, currency: 'AUD',
-      suburb: sel.suburb, service: sel.service_type, timing: sel.timing});
+    var leadValues = {full_repaint:6500, exterior:4500, interior:3500, commercial:8000, maintenance:350};
+  var baseVal = leadValues[sel.service_type] || 3000;
+  var timingMult = sel.timing === 'asap' ? 1.2 : (sel.timing === '1-4_weeks' ? 1.0 : 0.7);
+  var propMult = sel.property_type === 'commercial' ? 1.5 : (sel.property_type === 'apartment' ? 0.5 : 1.0);
+  var estimatedValue = Math.round(baseVal * timingMult * propMult / 100) * 100;
+  fbq('track', 'Lead', {content_name: 'Meta LP', value: estimatedValue, currency: 'AUD',
+      suburb: sel.suburb, service: sel.service_type, timing: sel.timing,
+      predicted_job_value: estimatedValue});
     if (isQualified(sel)) {
       fbq('trackCustom', 'QualifiedLead', {suburb: sel.suburb, service: sel.service_type, timing: sel.timing});
     }
