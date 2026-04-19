@@ -718,6 +718,23 @@ function handleSubmit() {
   _hsq.push(['identify', hsIdentify]);
   _hsq.push(['trackPageView']);
 
+  // HubSpot Forms API — reliable contact creation with all fields
+  var hsFields = [
+    {name: 'firstname', value: firstname},
+    {name: 'phone', value: phone},
+    {name: 'city', value: sel.suburb || ''},
+    {name: 'message', value: msgText}
+  ];
+  if (email) hsFields.push({name: 'email', value: email});
+  fetch('https://api.hsforms.com/submissions/v3/integration/submit/441704354/e0eab168-0b93-4a36-a098-ce60858d4c9a', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      fields: hsFields,
+      context: {pageUri: window.location.href, pageName: document.title}
+    })
+  }).catch(function(){});
+
   if (typeof fbq !== 'undefined') {
     var leadValues = {full_repaint:6500, exterior:4500, interior:3500, commercial:8000, maintenance:350};
   var baseVal = leadValues[sel.service_type] || 3000;
